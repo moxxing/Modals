@@ -1,5 +1,8 @@
-.someModal {
+.modalBackground {
   position: fixed;
+
+  background-color: lawngreen;
+
   top: 0;
   bottom: 0;
   left: 0;
@@ -7,5 +10,27 @@
 
   padding: 30px 0;
 
-  background-color: lightblue;
+  cursor: pointer;
+}
+
+.modalActive {
+  position: absolute;
+
+  width: 350px;
+  height: 400px;
+
+  top: calc(50% - 175px);
+  left: calc(50% - 200px);
+
+  border-radius: 10px;
+
+  cursor: default;
+
+  padding: 30px 0;
+
+  background-color: lightpink;
+}
+
+.modalClose {
+  position: relative;
 }

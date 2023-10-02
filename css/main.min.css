@@ -1,1 +1,1 @@
-.someModal{position:fixed;top:0;bottom:0;left:0;right:0;padding:30px 0;background-color:#add8e6}/*# sourceMappingURL=main.min.css.map */
+.modalBackground{position:fixed;background-color:#7cfc00;top:0;bottom:0;left:0;right:0;padding:30px 0;cursor:pointer}.modalActive{position:absolute;width:350px;height:400px;top:calc(50% - 175px);left:calc(50% - 200px);border-radius:10px;cursor:default;padding:30px 0;background-color:#ffb6c1}.modalClose{position:relative}/*# sourceMappingURL=main.min.css.map */
