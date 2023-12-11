@@ -6,7 +6,8 @@
   cursor: pointer;
   transition: background-color 2s ease;
 }
-.btn-open:hover {
+.btn-open:hover,
+.btn-open:focus {
   background-color: yellow;
 }
 
@@ -57,4 +58,55 @@
 
 .modalBtn:focus-visible {
   outline-color: red;
+}
+
+.q {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+
+  padding: 50px;
+
+  visibility: hidden;
+}
+
+.qq {
+  position: relative;
+
+  margin: auto;
+  max-width: 400px;
+  height: 600px;
+  background-color: lightslategray;
+
+  padding: 40px;
+
+  overflow-y: auto;
+}
+
+.qqq {
+  position: absolute;
+
+  top: 20px;
+  right: 40px;
+
+  background-color: inherit;
+  border-radius: 10px;
+}
+
+.btn-q {
+  border: none;
+  outline: 2px solid darkblue;
+  border-radius: 10px;
+
+  font-size: 30px;
+
+  background-color: grey;
+
+  cursor: pointer;
+  transition: background-color 2s ease;
+}
+.btn-q:focus-visible {
+  background-color: lightseagreen;
 }
