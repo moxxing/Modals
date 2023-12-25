@@ -1,25 +1,35 @@
-const w = document.querySelectorAll(".btn-q");
-const e = document.querySelector(".q");
+secondModalController = ({ modal, btnOpen, btnClose }) => {
+  const w = document.querySelectorAll(btnOpen);
+  const e = document.querySelector(modal);
 
-e.style.cssText =
-  "display: flex; visibility: hidden; opacity: 0; transition: opacity 3s ease";
+  e.style.cssText =
+    "display: flex; visibility: hidden; opacity: 0; transition: opacity 3s ease";
 
-const closeQ = (event) => {
-  const targetQ = event.target;
+  const closeQ = (event) => {
+    const targetQ = event.target;
 
-  if (targetQ === e || targetQ.closest(".qqq")) {
-    e.style.opacity = 0;
-    e.style.visibility = "hidden";
-  }
+    if (targetQ === e || targetQ.closest(btnClose)) {
+      e.style.opacity = 0;
+      setTimeout(() => {
+        e.style.visibility = "hidden";
+      }, 1000);
+    }
+  };
+
+  const openQ = () => {
+    e.style.visibility = "visible";
+    e.style.opacity = 1;
+  };
+
+  w.forEach((btnqq) => {
+    btnqq.addEventListener("click", openQ);
+  });
+
+  e.addEventListener("click", closeQ);
 };
 
-const openQ = () => {
-  e.style.visibility = "visible";
-  e.style.opacity = 1;
-};
-
-w.forEach((btnqq) => {
-  btnqq.addEventListener("click", openQ);
+secondModalController({
+  modal: ".q",
+  btnOpen: ".btn-q",
+  btnClose: ".qqq",
 });
-
-e.addEventListener("click", closeQ);

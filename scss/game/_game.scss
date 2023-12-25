@@ -1,0 +1,30 @@
+.btn-game {
+  display: block;
+  font-weight: 700;
+
+  border: none;
+
+  outline: inset 2px red;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+}
+
+.w {
+  position: fixed;
+
+  background-color: rgba(5, 12, 5, 0.7);
+
+  inset: 0;
+}
+
+.w1 {
+  position: fixed;
+
+  background-color: rgba(55, 102, 5, 0.7);
+
+  inset: 0;
+}

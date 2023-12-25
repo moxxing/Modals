@@ -66,7 +66,9 @@
   width: 100%;
   height: 100%;
   background-color: darkred;
+  inset: 0;
   padding: 50px;
+  cursor: pointer;
 }
 
 .qq {
@@ -77,6 +79,7 @@
   background-color: lightslategray;
   padding: 40px;
   overflow-y: auto;
+  cursor: default;
 }
 
 .qqq {
@@ -85,6 +88,7 @@
   right: 40px;
   background-color: inherit;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .btn-q {
@@ -96,8 +100,31 @@
   cursor: pointer;
   -webkit-transition: background-color 2s ease;
   transition: background-color 2s ease;
+  margin-bottom: 50px;
 }
 
 .btn-q:focus-visible {
   background-color: lightseagreen;
+}
+
+.btn-game {
+  display: block;
+  font-weight: 700;
+  border: none;
+  outline: inset 2px red;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.w {
+  position: fixed;
+  background-color: rgba(5, 12, 5, 0.7);
+  inset: 0;
+}
+
+.w1 {
+  position: fixed;
+  background-color: rgba(55, 102, 5, 0.7);
+  inset: 0;
 }/*# sourceMappingURL=main.css.map */

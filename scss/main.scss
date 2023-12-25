@@ -67,7 +67,11 @@
   height: 100%;
   background-color: darkred;
 
+  inset: 0;
+
   padding: 50px;
+
+  cursor: pointer;
 }
 
 .qq {
@@ -81,6 +85,8 @@
   padding: 40px;
 
   overflow-y: auto;
+
+  cursor: default;
 }
 
 .qqq {
@@ -91,6 +97,8 @@
 
   background-color: inherit;
   border-radius: 10px;
+
+  cursor: pointer;
 }
 
 .btn-q {
@@ -104,8 +112,10 @@
 
   cursor: pointer;
   transition: background-color 2s ease;
+  margin-bottom: 50px;
 }
 .btn-q:focus-visible {
   background-color: lightseagreen;
-  
 }
+
+@import "./game/game";
